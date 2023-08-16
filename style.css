@@ -1,0 +1,65 @@
+/***This line imports the "Poppins" font family with different font weights from Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+/*Sets the box-sizing property of all elements to border-box, 
+which includes padding and border in the element's total width and height.*/
+*{
+    box-sizing: border-box;
+}
+/*Styles applied to the body element:
+Sets the background image to 'snow.jpg'.
+Applies the "Poppins" font family.
+Sets the background size to cover, ensuring the background image covers the entire viewport.*/
+body{
+    background-image: url(snow.jpg);
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+}
+/*Styles applied to h1 (heading) elements:
+Sets the font weight to normal.
+Sets the font size to 4rem (relative to the root font size).
+Adds margin to the top of 5rem.*/
+h1{
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+/*Styles applied to elements with the class countdown-container:
+Displays flex container properties:
+Allows items to wrap to a new line with flex-wrap: wrap.
+Centers items both vertically and horizontally with align-items: center and justify-content: center.*/
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*Styles applied to elements with the class big-text:
+Sets the font weight to bold.
+Sets the font size to 6rem.
+Sets the line height to 1.
+Adds margins to create spacing around the element.*/
+.big-text{
+    font-weight: bold ;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    margin: 1rem 2rem;
+}
+/*Styles applied to elements with the class countdown-el:
+Sets the text alignment to center.*/
+.countedown-el{
+    text-align: center;
+}
+/*Styles applied to elements with the class span within elements with the class countdown-el:
+Sets the font size to 1.5rem.*/
+.countdown-el .span{
+    font-size: 1.5rem;
+}
